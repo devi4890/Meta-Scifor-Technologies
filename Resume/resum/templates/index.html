@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 5px 0;
+        }
+
+        .section strong {
+            color: #3498db;
+        }
+
+        .skills, .experience, .education {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li, .experience li, .education li {
+            background: #f2f2f2;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills li {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 25px;
+            font-size: 14px;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info strong {
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RESUME</h1>
+        
+        <!-- Contact Information Section -->
+        <div class="section contact-info">
+            <h2>{{ resume.name }}</h2>
+            <p><strong>Email:</strong> {{ resume.email }}</p>
+            <p><strong>Phone:</strong> {{ resume.phone }}</p>
+        </div>
+        
+        
+        <div class="section">
+            <h2>Summary</h2>
+            <p>{{ resume.summary }}</p>
+        </div>
+        
+        
+        <div class="section">
+            <h2>Skills</h2>
+            
+            <ul>
+                <li>{{ resume.skills}} </li>
+            
+        </ul>
+                
+            
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <ul>
+                    <li>{{ resume.experience }} </li>
+                
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                    <li>{{ resume.education }} </li>
+               
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
