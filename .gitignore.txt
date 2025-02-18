@@ -1,0 +1,10 @@
+# Ignore virtual environments
+Resume/myenv/
+
+# You can also ignore common Python artifacts:
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.log
